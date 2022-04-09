@@ -106,7 +106,8 @@ app.post('/', (req, res) => {
     }).catch((error) => {
 
         if (error.status = 400) {
-            erros.push ({'texto': error.response.data.message}) 
+            erros.push ({'texto': `CEP INVÁLIDO OU INEXISTENTE`})
+            erros.push ({'texto': error.response.data.message})
             erros.push ({'texto': `${cep}`}) 
         } else {
             erros.push ({'texto': 'Sem resposta de'})
