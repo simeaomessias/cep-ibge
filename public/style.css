@@ -1,0 +1,177 @@
+/* ============================================================ */
+/* RESET GERAL E DEFINIÇÃO DE VARIÁVEIS                         */
+/* ============================================================ */
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+:root {
+    --branco: rgb(255,255,255);
+    --preto: rgb(0,0,0);
+    --cinza-claro: rgb(200,200,200);
+    --laranja: rgb(255,200,0);
+    --azul-claro: rgb(0,191,255);
+}
+
+body {
+    background-color: var(--branco);
+    color: var(--preto);
+    overflow: scroll;
+}
+
+/* ============================================================ */
+/* TELAS
+/* ============================================================ */
+
+.envoltorioGlobal {
+    margin: 0; padding: 0; box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.formulario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.caixaEnviarCEP, .caixaRelatorio {
+    margin: 0; padding: 0; box-sizing: border-box;
+    width: 100%;
+    max-width: 400px;
+    border: 4px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial;
+    position: relative;
+    margin: 0 auto;
+    background-color: var(--azul-claro);
+    border: 1px solid black;
+}
+
+.titulo {
+    background-color: var(--laranja);
+    width: 100%;
+    color: var(--textoTitulo);
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.inputCEP {
+    background-color:  var(--branco);
+    width: 95%;
+    height: 36px;
+    border: 1px solid var(--preto);
+    outline: none;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+
+.inputCEP::placeholder {color: var(--cinza-claro)}
+
+.alerta-erros {
+    margin: 0; padding: 0; box-sizing: border-box;
+    width: 100%;
+    color: var(--preto);
+    font-weight: bold;
+    padding: 3px;
+    text-align: center;
+}
+
+#btn-buscar, #btn-novo {
+    background-color: var(--laranja);
+    width: 40%;
+    height: 36px;
+    border: 1px solid var(--preto);
+    outline: none;
+    font-size: 16px;
+    text-align: left;
+    padding-left: 5px;
+    align-self: center;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#btn-buscar:hover, #btn-novo:hover {
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+.resultado {
+    background-color:  var(--branco);
+    width: 95%;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 5px;
+}
+
+.fundoCep {
+    background-color:  var(--branco);
+    width: 95%;
+    height: 36px;
+    outline: none;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+
+.texto {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.tituloIBGE {
+    background-color: var(--laranja);
+    width: 100%;
+    color: var(--textoTitulo);
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.links {
+    background-color:  var(--branco);
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.links a {
+    font-size: 16px;
+    text-align: center;
+}

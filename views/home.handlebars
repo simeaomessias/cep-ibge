@@ -1,0 +1,24 @@
+<div class="envoltorioGlobal">
+
+    <form action="/" method="post" class="formulario" name="formEnviarCEP" id="formEnviarCEP">
+        
+        <div class="caixaEnviarCEP">
+            
+            <div class="titulo">
+                <p>PESQUISA POR CEP</p>
+            </div>
+
+            <input type="text" class="inputCEP" id="cep" name="cep" placeholder="Informe um CEP" autocomplete="off" required="true" autofocus="true">
+            
+            {{#if erros}}
+                {{#each erros}}
+                    <div class="alerta-erros">{{texto}}</div>
+                {{/each}}
+            {{/if}}  
+     
+            <input type="submit" id="btn-buscar" value="Buscar">
+     
+        </div>
+    </form>
+
+</div>

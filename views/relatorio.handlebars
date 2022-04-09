@@ -1,0 +1,32 @@
+<div class="envoltorioGlobal">
+
+    <div class="caixaRelatorio">
+
+        <div class="titulo">
+            <p>PESQUISA POR CEP</p>
+        </div>
+
+        <p class="fundoCep">{{relatorio.cep}}</p>
+
+        <div class="resultado">
+            <p class="texto">{{relatorio.endereco}}</p>
+            <p class="texto">{{relatorio.bairro}}</p>
+            <p class="texto">{{relatorio.cidade}} / {{relatorio.estado}} ({{relatorio.regiao}})</p>
+        </div>
+
+        <div class="tituloIBGE">
+            <p>Informações do IBGE</p>
+        </div>
+        
+        <div class="links">
+            <a href="{{relatorio.IBGE_Cidade}}">{{relatorio.cidade}}</a>
+            <a href="{{relatorio.IBGE_Estado}}">{{relatorio.estado}}</a>
+        </div>
+
+        <button id="btn-novo" type="button"><a href="/" style="text-decoration:none; color:black; display: block;">Nova pesquisa</a></button>
+    
+    </div>
+
+</div>
+
+
